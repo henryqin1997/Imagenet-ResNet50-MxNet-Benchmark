@@ -123,14 +123,21 @@ readonly num_ibdevs="${#ibdevs[@]}"
 declare -a numactl_args=()
 
 case "${cpu_mode}" in
+#    exclusive)
+#        numactl_args+=( "$(printf -- "--physcpubind=%u-%u,%u-%u" \
+#            $(( local_rank * cores_per_gpu )) \
+#            $(( (local_rank + 1) * cores_per_gpu - 1 )) \
+#            $(( local_rank * cores_per_gpu + (cores_per_gpu * gpus_per_node * num_nodes) )) \
+#            $(( (local_rank + 1) * cores_per_gpu + (cores_per_gpu * gpus_per_node * num_nodes) - 1 )) \
+#        )" )
+#        ;;
     exclusive)
-        numactl_args+=( "$(printf -- "--physcpubind=%u-%u,%u-%u" \
+        numactl_args+=( "$(printf -- "--physcpubind=%u-%u" \
             $(( local_rank * cores_per_gpu )) \
             $(( (local_rank + 1) * cores_per_gpu - 1 )) \
-            $(( local_rank * cores_per_gpu + (cores_per_gpu * gpus_per_node * num_nodes) )) \
-            $(( (local_rank + 1) * cores_per_gpu + (cores_per_gpu * gpus_per_node * num_nodes) - 1 )) \
         )" )
         ;;
+
     exclusive,nosmt)
         numactl_args+=( "$(printf -- "--physcpubind=%u-%u" \
             $(( local_rank * cores_per_gpu )) \

@@ -12,7 +12,8 @@ export WD="5.0e-05"
 export MOM="0.9"
 export LARSETA="0.001"
 export LABELSMOOTHING="0.1"
-export LRSCHED="pow2"
+#export LRSCHED="pow2"
+export LRSCHED="onecycle"
 export NUMEPOCHS=${NUMEPOCHS:-"37"}
 
 export NETWORK="resnet-v1b-stats-fl"
