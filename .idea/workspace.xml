@@ -87,8 +87,8 @@
       <file leaf-file-name="fit.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/common/fit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="730" column="0" lean-forward="true" selection-start-line="730" selection-start-column="0" selection-end-line="730" selection-end-column="0" />
+            <state relative-caret-position="266">
+              <caret line="729" column="84" lean-forward="false" selection-start-line="729" selection-start-column="84" selection-end-line="729" selection-end-column="84" />
               <folding>
                 <element signature="e#820#834#0" expanded="true" />
               </folding>
@@ -353,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641870150987</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix">
+      <created>1641876135889</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641876135889</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -607,8 +614,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/common/fit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="730" column="0" lean-forward="true" selection-start-line="730" selection-start-column="0" selection-end-line="730" selection-end-column="0" />
+        <state relative-caret-position="266">
+          <caret line="729" column="84" lean-forward="false" selection-start-line="729" selection-start-column="84" selection-end-line="729" selection-end-column="84" />
           <folding>
             <element signature="e#820#834#0" expanded="true" />
           </folding>
