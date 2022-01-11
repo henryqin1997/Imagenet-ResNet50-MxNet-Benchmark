@@ -122,6 +122,8 @@ readonly num_ibdevs="${#ibdevs[@]}"
 
 declare -a numactl_args=()
 
+echo "${cpu_mode}"
+
 case "${cpu_mode}" in
 #    exclusive)
 #        numactl_args+=( "$(printf -- "--physcpubind=%u-%u,%u-%u" \

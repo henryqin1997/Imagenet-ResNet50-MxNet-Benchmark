@@ -59,6 +59,8 @@ def add_general_args(parser):
                         help='key-value store type')
     parser.add_argument('--bn-group', type=int, default=1, choices=[1, 2, 4, 8], 
                         help='Group of processes to collaborate on BatchNorm ops')
+    parser.add_argument('--onecycle', type=str, default=None,
+                        help='using onecycle scheduling')
 
 def _get_gpu(gpus):
     idx = hvd.local_rank()

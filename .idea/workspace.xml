@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d09fab89-54cd-4353-b361-912fc7a7036c" name="Default" comment="">
+    <list default="true" id="d09fab89-54cd-4353-b361-912fc7a7036c" name="Default" comment="one line to run">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/bind.sh" afterPath="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/bind.sh" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/train_imagenet.py" afterPath="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/train_imagenet.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,8 +15,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="1_node_8_A100_NGC21.05_MXNet.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systems/1_node_8_A100_NGC21.05_MXNet.json">
+      <file leaf-file-name="run_and_time.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_and_time.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="174" column="24" lean-forward="true" selection-start-line="174" selection-start-column="24" selection-end-line="174" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -23,21 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_and_time.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_and_time.sh">
+      <file leaf-file-name="bind.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/bind.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="41" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run_and_time_onecycle.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_and_time_onecycle.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="163" column="108" lean-forward="false" selection-start-line="163" selection-start-column="107" selection-end-line="163" selection-end-column="108" />
+            <state relative-caret-position="-6">
+              <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -46,8 +48,38 @@
       <file leaf-file-name="train_imagenet.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/train_imagenet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="21" />
+            <state relative-caret-position="422">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config_DGXA100.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/config_DGXA100.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-360">
+              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_with_docker.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_with_docker.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="104" column="77" lean-forward="false" selection-start-line="104" selection-start-column="74" selection-end-line="104" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_and_time_onecycle.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_and_time_onecycle.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-451">
+              <caret line="88" column="6" lean-forward="false" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -56,8 +88,8 @@
       <file leaf-file-name="fit.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/common/fit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="646" column="16" lean-forward="false" selection-start-line="646" selection-start-column="8" selection-end-line="646" selection-end-column="16" />
+            <state relative-caret-position="157">
+              <caret line="645" column="21" lean-forward="false" selection-start-line="645" selection-start-column="9" selection-end-line="645" selection-end-column="21" />
               <folding>
                 <element signature="e#820#834#0" expanded="true" />
               </folding>
@@ -65,32 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mlperf_log_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/mlperf_log_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="76" column="18" lean-forward="false" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result_0.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/1_node_8_A100_NGC21.05_MXNet/resnet/result_0.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="126" lean-forward="false" selection-start-line="9" selection-start-column="125" selection-end-line="9" selection-end-column="126" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run_with_docker_once.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run_with_docker_once.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_with_docker_once.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="429">
               <caret line="94" column="14" lean-forward="false" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
               <folding />
             </state>
@@ -101,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/my_run.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -111,16 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>time</find>
-      <find>for</find>
-      <find>python</find>
-      <find>batchsize</find>
-      <find>PROFILE</find>
-      <find>warmup</find>
-      <find>EVAL_PERIOD</find>
-      <find>EVAL_OFFSET</find>
-      <find>accuracy_thre</find>
-      <find>_get_lr_scheduler</find>
       <find>valid</find>
       <find>lr</find>
       <find>lr_find</find>
@@ -132,6 +132,25 @@
       <find>fit</find>
       <find>mlperf_fit</find>
       <find>onecycle</find>
+      <find>sudo</find>
+      <find>_config_env</find>
+      <find>pow</find>
+      <find>NUMEPOCHS</find>
+      <find>LRSCHED</find>
+      <find>step</find>
+      <find>running</find>
+      <find>cores</find>
+      <find>cpubind</find>
+      <find>bind_cpu_cores</find>
+      <find>bind.sh</find>
+      <find>bind</find>
+      <find>PROFILE_COMMAND</find>
+      <find>physcpubind</find>
+      <find>cpu_mode</find>
+      <find>echo</find>
+      <find>256</find>
+      <find>.sh</find>
+      <find>lr_scheduler</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -143,10 +162,15 @@
         <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_lr_finder.sh" />
         <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/mlperf_log_utils.py" />
         <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_with_docker_lr_finder_once.sh" />
-        <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/common/fit.py" />
         <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_and_time_onecycle.sh" />
         <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/my_run.sh" />
         <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_with_docker_once.sh" />
+        <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_and_time.sh" />
+        <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_with_docker.sh" />
+        <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/common/fit.py" />
+        <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/config_DGXA100.sh" />
+        <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/bind.sh" />
+        <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/train_imagenet.py" />
       </list>
     </option>
   </component>
@@ -255,6 +279,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="running&#9;null&#9;null&#10;cpubind&#9;null&#9;null&#10;--cpubind&#9;null&#9;null&#10;numactl&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -301,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641651805059</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="one line to run">
+      <created>1641827000325</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1641827000325</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -438,14 +470,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_and_time_once.sh" />
-    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/train_imagenet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/mlperf_log_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1065">
@@ -480,44 +504,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_and_time.sh">
+    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_with_docker_once.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="41" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+        <state relative-caret-position="429">
+          <caret line="94" column="14" lean-forward="false" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/common/fit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="646" column="16" lean-forward="false" selection-start-line="646" selection-start-column="8" selection-end-line="646" selection-end-column="16" />
-          <folding>
-            <element signature="e#820#834#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/my_run.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/config_DGXA100_common.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/bind.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/config_DGXA100.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_with_docker.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="104" column="77" lean-forward="false" selection-start-line="104" selection-start-column="74" selection-end-line="104" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_and_time.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="174" column="24" lean-forward="true" selection-start-line="174" selection-start-column="24" selection-end-line="174" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/train_imagenet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/common/fit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="645" column="21" lean-forward="false" selection-start-line="645" selection-start-column="9" selection-end-line="645" selection-end-column="21" />
+          <folding>
+            <element signature="e#820#834#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_and_time_onecycle.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="163" column="108" lean-forward="false" selection-start-line="163" selection-start-column="107" selection-end-line="163" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_with_docker_once.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="94" column="14" lean-forward="false" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
+        <state relative-caret-position="-451">
+          <caret line="88" column="6" lean-forward="false" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
           <folding />
         </state>
       </provider>
