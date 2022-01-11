@@ -1,12 +1,6 @@
 # Imagenet-ResNet50-MxNet-Benchmark
 Copy from Nvidia MLperf benchmak, and modified to do some other test
 
-## 1. Build (or update) the ResNet50 NGC21.05 MXNet container
-
-```
-docker build -t mlperf-nvidia:image_classification .
-```
-
 To run mlperf 5-run benchmark, do
 
 ```
