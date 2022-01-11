@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d09fab89-54cd-4353-b361-912fc7a7036c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/common/fit.py" afterPath="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/common/fit.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bind.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bind.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/bind.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-252">
@@ -83,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fit.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fit.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/common/fit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="645" column="21" lean-forward="false" selection-start-line="645" selection-start-column="9" selection-end-line="645" selection-end-column="21" />
+            <state relative-caret-position="281">
+              <caret line="730" column="0" lean-forward="true" selection-start-line="730" selection-start-column="0" selection-end-line="730" selection-end-column="0" />
               <folding>
                 <element signature="e#820#834#0" expanded="true" />
               </folding>
@@ -119,7 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>valid</find>
       <find>lr</find>
       <find>lr_find</find>
       <find>epoch</find>
@@ -144,11 +144,12 @@
       <find>PROFILE_COMMAND</find>
       <find>physcpubind</find>
       <find>cpu_mode</find>
-      <find>echo</find>
       <find>256</find>
       <find>.sh</find>
       <find>lr_scheduler</find>
       <find>LRSCHED</find>
+      <find>echo</find>
+      <find>myonecy</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -165,10 +166,10 @@
         <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_with_docker_once.sh" />
         <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_and_time.sh" />
         <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_with_docker.sh" />
-        <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/common/fit.py" />
         <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/config_DGXA100.sh" />
         <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/bind.sh" />
         <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/train_imagenet.py" />
+        <option value="$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/common/fit.py" />
       </list>
     </option>
   </component>
@@ -338,18 +339,33 @@
       <option name="project" value="LOCAL" />
       <updated>1641862695597</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="one line to run">
+      <created>1641868282412</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641868282412</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix">
+      <created>1641870150986</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641870150987</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="92" y="23" width="1588" height="956" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25291073" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -374,7 +390,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="one line to run" />
-    <option name="LAST_COMMIT_MESSAGE" value="one line to run" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -418,7 +435,7 @@
         <state relative-caret-position="1065">
           <caret line="76" column="18" lean-forward="false" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -479,7 +496,7 @@
         <state relative-caret-position="1065">
           <caret line="76" column="18" lean-forward="false" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -564,16 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/common/fit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="645" column="21" lean-forward="false" selection-start-line="645" selection-start-column="9" selection-end-line="645" selection-end-column="21" />
-          <folding>
-            <element signature="e#820#834#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/run_and_time_onecycle.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
@@ -595,6 +602,16 @@
         <state relative-caret-position="-252">
           <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/resnet/implementations/1_node_8_A100_NGC21.05_MXNet/common/fit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="730" column="0" lean-forward="true" selection-start-line="730" selection-start-column="0" selection-end-line="730" selection-end-column="0" />
+          <folding>
+            <element signature="e#820#834#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

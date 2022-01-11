@@ -727,10 +727,7 @@ class MyOneCycle():
         else:
             it = iteration - self.warmup_iterations
             total = self.iterations - self.warmup_iterations
-            if it < total * 2 / 3:
-                return self.base_lr + 0.4 * math.cos(math.pi * (-0.5 + 3 * it / total / 2))
-            else:
-                return self.base_lr - (self.base_lr - self.end_lr) * math.cos(math.pi * (-0.5 + 3 * it / total / 2))
+            return self.end_lr + (self.base_lr - self.end_lr) * math.cos(math.pi * (it / total))
 
 
 
