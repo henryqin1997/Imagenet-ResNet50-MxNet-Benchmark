@@ -718,9 +718,7 @@ class MyOneCycle():
         self.iterations = iterations
         self.warmup_iterations = warmup_iterations
         self.end_lr = 0.0001
-        mx_resnet_print_event(key='sgd_opt_learning_rate_decay_poly_power', val=self.lr_decay_poly_power)
         mx_resnet_print_event(key='sgd_opt_end_learning_rate', val=self.end_lr)
-        mx_resnet_print_event(key=constants.LARS_OPT_LR_DECAY_POLY_POWER, val=self.lr_decay_poly_power)
         mx_resnet_print_event(key=constants.LARS_OPT_END_LR, val=self.end_lr)
 
     def __call__(self, iteration):
