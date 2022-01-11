@@ -26,6 +26,7 @@ RUN apt-get update \
 WORKDIR /workspace/image_classification
 
 COPY requirements.txt .
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir https://github.com/mlperf/logging/archive/5bc16bf.zip \
  && pip install --no-cache-dir -r requirements.txt
 
