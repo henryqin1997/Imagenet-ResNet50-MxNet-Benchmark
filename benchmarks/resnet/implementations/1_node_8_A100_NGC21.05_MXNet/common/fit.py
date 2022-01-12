@@ -644,7 +644,7 @@ def _get_gpu(gpus):
     return gpu
 
 def _get_lr_scheduler(args, kv):
-    if args.onecycle:
+    if 'onecycle' in args.lr_step_epochs:
         num_workers = get_num_workers(args, kv)
         epoch_size = math.ceil(int(args.num_examples / num_workers) / args.batch_size)
         warmup_steps = epoch_size * args.warmup_epochs
