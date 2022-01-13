@@ -13,7 +13,7 @@ export MOM="0.9"
 export LARSETA="0.001"
 export LABELSMOOTHING="0.1"
 export LRSCHED="onecycle"
-export NUMEPOCHS=${NUMEPOCHS:-"30"}
+export NUMEPOCHS=${NUMEPOCHS:-"31"}
 
 export NETWORK="resnet-v1b-stats-fl"
 export MXNET_CUDNN_NHWC_BN_ADD_HEURISTIC_BWD=0
