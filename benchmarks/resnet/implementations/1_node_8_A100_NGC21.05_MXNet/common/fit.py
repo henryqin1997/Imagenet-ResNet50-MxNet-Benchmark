@@ -1023,6 +1023,7 @@ def mlperf_fit(self, args, train_data, eval_data=None, eval_metric='acc',
                 acc = [res['correct-count'], res['total-count']]
                 acc = all_reduce(acc)
                 acc = acc[0]/acc[1]
+                self.logger.info('Epoch[%d] Aggregrated-Validation-acc:%f', epoch, acc)
                 mx_resnet_print_end(key=constants.EVAL_STOP, metadata={'epoch_num': epoch + 1})
 
                 mx_resnet_print_event(key=constants.EVAL_ACCURACY, val=acc,
