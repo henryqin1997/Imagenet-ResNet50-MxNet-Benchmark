@@ -6,13 +6,13 @@ export BATCHSIZE="408"
 export KVSTORE="horovod"
 export LR="10.5"
 export WARMUP_EPOCHS="2"
-export EVAL_OFFSET="2" # Targeting epoch no. 35
-export EVAL_PERIOD="4"
+export EVAL_OFFSET="0" # Targeting epoch no. 35
+export EVAL_PERIOD="1"
 export WD="5.0e-05"
 export MOM="0.9"
 export LARSETA="0.001"
 export LABELSMOOTHING="0.1"
-export LRSCHED="onecycle"
+export LRSCHED="pow2"
 export NUMEPOCHS=${NUMEPOCHS:-"35"}
 
 export NETWORK="resnet-v1b-stats-fl"

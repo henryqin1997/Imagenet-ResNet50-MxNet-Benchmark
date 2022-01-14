@@ -134,7 +134,6 @@ PARAMS=(
       --dali-crop-buffer-hint "${DALI_CROP_BUFFER_HINT}"
       --dali-normalize-buffer-hint "${DALI_NORMALIZE_BUFFER_HINT}"
       --profile            "${PROFILE}"
-      --onecycle           "True"
 )
 if [[ ${NODALI} -lt 1 ]]; then
     PARAMS+=(

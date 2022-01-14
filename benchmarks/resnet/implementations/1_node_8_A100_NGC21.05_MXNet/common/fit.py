@@ -695,7 +695,7 @@ class PolySchedule():
         self.base_lr = base_lr
         self.iterations = iterations
         self.warmup_iterations = warmup_iterations
-        self.end_lr = 0.0001
+        self.end_lr = 0.001
         self.lr_decay_poly_power = 2
         mx_resnet_print_event(key='sgd_opt_learning_rate_decay_poly_power', val=self.lr_decay_poly_power)
         mx_resnet_print_event(key='sgd_opt_end_learning_rate', val=self.end_lr)
