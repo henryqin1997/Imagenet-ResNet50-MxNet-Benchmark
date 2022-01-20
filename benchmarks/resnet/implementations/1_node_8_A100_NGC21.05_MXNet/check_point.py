@@ -70,6 +70,24 @@ def _get_gpu(gpus):
     gpu = gpus.split(",")[idx]
     return gpu
 
+def save(mod, prefix):
+    mod._symbol.save('%s-symbol.json' % prefix)
+    mod.save_params('%s.params' % prefix)
+
+def load(prefix):
+    symbol = mx.sym.load('%s-symbol.json' % prefix)
+    save_dict = mx.nd.load('%s.params' % prefix)
+    arg_params = {}
+    aux_params = {}
+    for k, v in save_dict.items():
+        tp, name = k.split(':', 1)
+        print(name)
+        if tp == 'arg':
+            arg_params[name] = v
+        if tp == 'aux':
+            aux_params[name] = v
+    return (symbol, arg_params, aux_params)
+
 
 class MLPerfInit(mx.init.Xavier):
     def _init_weight(self, name, arg):
@@ -240,7 +258,7 @@ if __name__ == '__main__':
 
     prefix = 'init_params'
     iteration = 0
-    model.save(prefix, iteration)
+    save(model,prefix)
 
 
     # Start training
