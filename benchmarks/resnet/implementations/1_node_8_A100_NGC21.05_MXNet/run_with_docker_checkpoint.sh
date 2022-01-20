@@ -65,7 +65,7 @@ cleanup_docker() {
     docker container rm -f "${_cont_name}" || true
 }
 cleanup_docker
-trap 'set -eux; cleanup_docker' EXIT
+#trap 'set -eux; cleanup_docker' EXIT
 
 # Setup container
 nvidia-docker run --init --detach \

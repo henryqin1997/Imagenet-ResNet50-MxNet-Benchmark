@@ -256,14 +256,13 @@ if __name__ == '__main__':
     mx.ndarray.waitall()
     mx_resnet_print_end(key=constants.INIT_STOP)
 
-    prefix = 'init_params'
-    iteration = 0
-    save(model,prefix)
-
 
     # Start training
-    # fit.fit(args, kv, model, initializer, lambda_fnc_dali_get_rec_iter, devs, arg_params, aux_params)
+    fit.fit(args, kv, model, initializer, lambda_fnc_dali_get_rec_iter, devs, arg_params, aux_params)
     #
+    prefix = 'final_params'
+    iteration = 0
+    save(model, prefix)
     # # Timeout alarm for possible hangs at job end
     # # TODO: REMOVE THIS!
     # signal.alarm(90)
