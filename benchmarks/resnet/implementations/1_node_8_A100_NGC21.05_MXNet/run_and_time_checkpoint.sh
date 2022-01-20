@@ -199,7 +199,7 @@ fi
 if [[ ${PROFILE} -ge 1 ]]; then
     TMPDIR=/results ${DISTRIBUTED} ${BIND} ${PROFILE_COMMAND} python check_point.py "${PARAMS[@]}"; ret_code=$?
 else
-    ${LOGGER:-} ${DISTRIBUTED} ${BIND} python train_imagenet.py "${PARAMS[@]}"; ret_code=$?
+    ${LOGGER:-} ${DISTRIBUTED} ${BIND} python check_point.py "${PARAMS[@]}"; ret_code=$?
 fi
 
 if [[ ${PROFILE} -ge 1 ]]; then
