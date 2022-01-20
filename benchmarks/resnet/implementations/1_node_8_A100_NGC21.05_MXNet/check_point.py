@@ -234,6 +234,8 @@ if __name__ == '__main__':
 
     arg_params, aux_params = None, None
 
+    symbol, arg_params, aux_params = load('init_params')
+
     # Model fetch and broadcast
     if 'horovod' in args.kv_store:
         # Create dummy data shapes and bind them to the model
@@ -242,8 +244,8 @@ if __name__ == '__main__':
         model.bind(data_shapes=data_shapes, label_shapes=label_shapes)
 
         # Horovod: fetch and broadcast parameters
-        model.init_params(initializer, arg_params=arg_params, aux_params=aux_params)
-        (arg_params, aux_params) = model.get_params()
+        # model.init_params(initializer, arg_params=arg_params, aux_params=aux_params)
+        # (arg_params, aux_params) = model.get_params()
 
         if arg_params is not None:
             hvd.broadcast_parameters(arg_params, root_rank=0)
